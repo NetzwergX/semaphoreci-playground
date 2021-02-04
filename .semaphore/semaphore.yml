@@ -13,7 +13,7 @@ blocks:
           commands:
             - checkout
     skip:
-      when: branch == 'setup-semaphore'
+      when: branch != 'setup-semaphore'
   - name: No-skip test
     dependencies:
       - Skip test
