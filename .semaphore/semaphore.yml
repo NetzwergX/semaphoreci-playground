@@ -12,6 +12,8 @@ blocks:
         - name: Build
           commands:
             - checkout
+    skip:
+      when: branch == 'setup-semaphore'
   - name: No-skip test
     dependencies:
       - Skip test
